@@ -33,7 +33,7 @@ import CoreBluetooth
 public let Beacons :BeaconsManager = BeaconsManager.shared
 
 open class BeaconsManager : NSObject, CLLocationManagerDelegate, CBPeripheralManagerDelegate {
-	open static let shared = BeaconsManager()
+    public static let shared = BeaconsManager()
 	
 	//MARK Private Variables
 	internal var manager: CLLocationManager
